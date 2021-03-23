@@ -112,8 +112,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             case .withLatestFrom:
                 targetVC = WithLatestFromViewController()
                 
-            default:
-                return
+            case .merge:
+                targetVC = MergeViewController()
+                
+            case .switchLatest:
+                targetVC = SwitchLatestViewController()
+                
+            case .zip:
+                targetVC = ZipViewController()
+                
+            case .concat:
+                targetVC = ConcatViewController()
+                
+            case .amb:
+                targetVC = AmbViewController()
+                
+            case .startWith:
+                targetVC = StartWithViewController()
             }
         }
         

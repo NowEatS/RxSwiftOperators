@@ -31,6 +31,12 @@
 		F3F6D8112609005C00C9D995 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6D8102609005C00C9D995 /* FilterViewController.swift */; };
 		F3F6D814260902AB00C9D995 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6D813260902AB00C9D995 /* FirstViewController.swift */; };
 		F3F6D8172609074800C9D995 /* IgnoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6D8162609074800C9D995 /* IgnoreViewController.swift */; };
+		F3F6D81F260A3EC100C9D995 /* MergeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6D81E260A3EC100C9D995 /* MergeViewController.swift */; };
+		F3F6D822260A42BF00C9D995 /* SwitchLatestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6D821260A42BF00C9D995 /* SwitchLatestViewController.swift */; };
+		F3F6D825260A457600C9D995 /* ZipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6D824260A457600C9D995 /* ZipViewController.swift */; };
+		F3F6D828260A473300C9D995 /* ConcatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6D827260A473300C9D995 /* ConcatViewController.swift */; };
+		F3F6D82B260A483D00C9D995 /* AmbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6D82A260A483D00C9D995 /* AmbViewController.swift */; };
+		F3F6D82E260A497B00C9D995 /* StartWithViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6D82D260A497B00C9D995 /* StartWithViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +68,12 @@
 		F3F6D8102609005C00C9D995 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		F3F6D813260902AB00C9D995 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		F3F6D8162609074800C9D995 /* IgnoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreViewController.swift; sourceTree = "<group>"; };
+		F3F6D81E260A3EC100C9D995 /* MergeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeViewController.swift; sourceTree = "<group>"; };
+		F3F6D821260A42BF00C9D995 /* SwitchLatestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchLatestViewController.swift; sourceTree = "<group>"; };
+		F3F6D824260A457600C9D995 /* ZipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipViewController.swift; sourceTree = "<group>"; };
+		F3F6D827260A473300C9D995 /* ConcatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcatViewController.swift; sourceTree = "<group>"; };
+		F3F6D82A260A483D00C9D995 /* AmbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbViewController.swift; sourceTree = "<group>"; };
+		F3F6D82D260A497B00C9D995 /* StartWithViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartWithViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,12 @@
 			children = (
 				7B64E71B260A264F00FE7DAD /* CombineLatestViewController.swift */,
 				7B64E71F260A28FB00FE7DAD /* WithLatestFromViewController.swift */,
+				F3F6D81E260A3EC100C9D995 /* MergeViewController.swift */,
+				F3F6D821260A42BF00C9D995 /* SwitchLatestViewController.swift */,
+				F3F6D824260A457600C9D995 /* ZipViewController.swift */,
+				F3F6D827260A473300C9D995 /* ConcatViewController.swift */,
+				F3F6D82A260A483D00C9D995 /* AmbViewController.swift */,
+				F3F6D82D260A497B00C9D995 /* StartWithViewController.swift */,
 			);
 			path = Combining;
 			sourceTree = "<group>";
@@ -272,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F6D822260A42BF00C9D995 /* SwitchLatestViewController.swift in Sources */,
 				F3F6D7F82608E9DD00C9D995 /* Items.swift in Sources */,
 				7B64E70C260A1F0C00FE7DAD /* SkipWhileViewController.swift in Sources */,
 				7B64E715260A234A00FE7DAD /* TakeWhileViewController.swift in Sources */,
@@ -279,8 +298,13 @@
 				7B64E706260A1AD000FE7DAD /* SampleViewController.swift in Sources */,
 				F3F6D7E72608E8FE00C9D995 /* ViewController.swift in Sources */,
 				F3F6D8112609005C00C9D995 /* FilterViewController.swift in Sources */,
+				F3F6D825260A457600C9D995 /* ZipViewController.swift in Sources */,
 				F3F6D7E32608E8FE00C9D995 /* AppDelegate.swift in Sources */,
 				7B64E712260A22DF00FE7DAD /* TakeViewController.swift in Sources */,
+				F3F6D82E260A497B00C9D995 /* StartWithViewController.swift in Sources */,
+				F3F6D81F260A3EC100C9D995 /* MergeViewController.swift in Sources */,
+				F3F6D82B260A483D00C9D995 /* AmbViewController.swift in Sources */,
+				F3F6D828260A473300C9D995 /* ConcatViewController.swift in Sources */,
 				F3F6D814260902AB00C9D995 /* FirstViewController.swift in Sources */,
 				F3F6D8172609074800C9D995 /* IgnoreViewController.swift in Sources */,
 				7B64E70F260A208100FE7DAD /* SkipUntilViewController.swift in Sources */,
