@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		177F0E468D10CA61C731D5EE /* Pods_RxSwiftOperators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9A32B1E04874E79A3B07B0 /* Pods_RxSwiftOperators.framework */; };
+		7B64E706260A1AD000FE7DAD /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64E705260A1AD000FE7DAD /* SampleViewController.swift */; };
+		7B64E709260A1D2C00FE7DAD /* SkipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64E708260A1D2C00FE7DAD /* SkipViewController.swift */; };
+		7B64E70C260A1F0C00FE7DAD /* SkipWhileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64E70B260A1F0C00FE7DAD /* SkipWhileViewController.swift */; };
+		7B64E70F260A208100FE7DAD /* SkipUntilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64E70E260A208000FE7DAD /* SkipUntilViewController.swift */; };
+		7B64E712260A22DF00FE7DAD /* TakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64E711260A22DF00FE7DAD /* TakeViewController.swift */; };
+		7B64E715260A234A00FE7DAD /* TakeWhileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64E714260A234A00FE7DAD /* TakeWhileViewController.swift */; };
+		7B64E718260A240D00FE7DAD /* TakeUntilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64E717260A240D00FE7DAD /* TakeUntilViewController.swift */; };
+		7B64E71C260A264F00FE7DAD /* CombineLatestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64E71B260A264F00FE7DAD /* CombineLatestViewController.swift */; };
+		7B64E720260A28FB00FE7DAD /* WithLatestFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64E71F260A28FB00FE7DAD /* WithLatestFromViewController.swift */; };
 		F3F6D7E32608E8FE00C9D995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6D7E22608E8FE00C9D995 /* AppDelegate.swift */; };
 		F3F6D7E52608E8FE00C9D995 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6D7E42608E8FE00C9D995 /* SceneDelegate.swift */; };
 		F3F6D7E72608E8FE00C9D995 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6D7E62608E8FE00C9D995 /* ViewController.swift */; };
@@ -26,6 +35,15 @@
 
 /* Begin PBXFileReference section */
 		10848C7397F92CA4B4B22539 /* Pods-RxSwiftOperators.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftOperators.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftOperators/Pods-RxSwiftOperators.debug.xcconfig"; sourceTree = "<group>"; };
+		7B64E705260A1AD000FE7DAD /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		7B64E708260A1D2C00FE7DAD /* SkipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipViewController.swift; sourceTree = "<group>"; };
+		7B64E70B260A1F0C00FE7DAD /* SkipWhileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipWhileViewController.swift; sourceTree = "<group>"; };
+		7B64E70E260A208000FE7DAD /* SkipUntilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipUntilViewController.swift; sourceTree = "<group>"; };
+		7B64E711260A22DF00FE7DAD /* TakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeViewController.swift; sourceTree = "<group>"; };
+		7B64E714260A234A00FE7DAD /* TakeWhileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeWhileViewController.swift; sourceTree = "<group>"; };
+		7B64E717260A240D00FE7DAD /* TakeUntilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeUntilViewController.swift; sourceTree = "<group>"; };
+		7B64E71B260A264F00FE7DAD /* CombineLatestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineLatestViewController.swift; sourceTree = "<group>"; };
+		7B64E71F260A28FB00FE7DAD /* WithLatestFromViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithLatestFromViewController.swift; sourceTree = "<group>"; };
 		970FAE176FA9F25444462818 /* Pods-RxSwiftOperators.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftOperators.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftOperators/Pods-RxSwiftOperators.release.xcconfig"; sourceTree = "<group>"; };
 		CD9A32B1E04874E79A3B07B0 /* Pods_RxSwiftOperators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftOperators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F6D7DF2608E8FE00C9D995 /* RxSwiftOperators.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftOperators.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B64E71A260A263B00FE7DAD /* Combining */ = {
+			isa = PBXGroup;
+			children = (
+				7B64E71B260A264F00FE7DAD /* CombineLatestViewController.swift */,
+				7B64E71F260A28FB00FE7DAD /* WithLatestFromViewController.swift */,
+			);
+			path = Combining;
+			sourceTree = "<group>";
+		};
 		7BAA201CADC27BE67AD7C194 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +127,7 @@
 				F3F6D7E42608E8FE00C9D995 /* SceneDelegate.swift */,
 				F3F6D7E62608E8FE00C9D995 /* ViewController.swift */,
 				F3F6D7FF2608EE6900C9D995 /* Filtering */,
+				7B64E71A260A263B00FE7DAD /* Combining */,
 				F3F6D7E82608E8FE00C9D995 /* Main.storyboard */,
 				F3F6D7EB2608E8FF00C9D995 /* Assets.xcassets */,
 				F3F6D7ED2608E8FF00C9D995 /* LaunchScreen.storyboard */,
@@ -119,6 +147,13 @@
 				F3F6D8102609005C00C9D995 /* FilterViewController.swift */,
 				F3F6D813260902AB00C9D995 /* FirstViewController.swift */,
 				F3F6D8162609074800C9D995 /* IgnoreViewController.swift */,
+				7B64E705260A1AD000FE7DAD /* SampleViewController.swift */,
+				7B64E708260A1D2C00FE7DAD /* SkipViewController.swift */,
+				7B64E70B260A1F0C00FE7DAD /* SkipWhileViewController.swift */,
+				7B64E70E260A208000FE7DAD /* SkipUntilViewController.swift */,
+				7B64E711260A22DF00FE7DAD /* TakeViewController.swift */,
+				7B64E714260A234A00FE7DAD /* TakeWhileViewController.swift */,
+				7B64E717260A240D00FE7DAD /* TakeUntilViewController.swift */,
 			);
 			path = Filtering;
 			sourceTree = "<group>";
@@ -238,14 +273,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3F6D7F82608E9DD00C9D995 /* Items.swift in Sources */,
+				7B64E70C260A1F0C00FE7DAD /* SkipWhileViewController.swift in Sources */,
+				7B64E715260A234A00FE7DAD /* TakeWhileViewController.swift in Sources */,
 				F3F6D80B2608FA9A00C9D995 /* DistinctUntilChangedViewController.swift in Sources */,
+				7B64E706260A1AD000FE7DAD /* SampleViewController.swift in Sources */,
 				F3F6D7E72608E8FE00C9D995 /* ViewController.swift in Sources */,
 				F3F6D8112609005C00C9D995 /* FilterViewController.swift in Sources */,
 				F3F6D7E32608E8FE00C9D995 /* AppDelegate.swift in Sources */,
+				7B64E712260A22DF00FE7DAD /* TakeViewController.swift in Sources */,
 				F3F6D814260902AB00C9D995 /* FirstViewController.swift in Sources */,
 				F3F6D8172609074800C9D995 /* IgnoreViewController.swift in Sources */,
+				7B64E70F260A208100FE7DAD /* SkipUntilViewController.swift in Sources */,
 				F3F6D7FD2608EE6500C9D995 /* DebounceViewController.swift in Sources */,
+				7B64E71C260A264F00FE7DAD /* CombineLatestViewController.swift in Sources */,
+				7B64E709260A1D2C00FE7DAD /* SkipViewController.swift in Sources */,
+				7B64E718260A240D00FE7DAD /* TakeUntilViewController.swift in Sources */,
 				F3F6D8082608F39C00C9D995 /* ThrottleViewController.swift in Sources */,
+				7B64E720260A28FB00FE7DAD /* WithLatestFromViewController.swift in Sources */,
 				F3F6D80E2608FDB900C9D995 /* ElementAtViewController.swift in Sources */,
 				F3F6D7E52608E8FE00C9D995 /* SceneDelegate.swift in Sources */,
 			);

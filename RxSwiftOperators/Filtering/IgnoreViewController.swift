@@ -21,6 +21,7 @@ class IgnoreViewController: UIViewController {
         
         view.addSubview(textView)
         textView.frame = view.frame
+        textView.isEditable = false
         textView.font = .systemFont(ofSize: 32.0)
         
         subject.ignoreElements()

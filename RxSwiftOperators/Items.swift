@@ -21,8 +21,10 @@ enum Filtering: String, CaseIterable {
     case first
     case ignoreElements
     case sample
+    case skip
     case skipWhile
     case skipUntil
+    case take
     case takeWhile
     case takeUntil
 }

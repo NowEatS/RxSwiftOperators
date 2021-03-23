@@ -81,12 +81,40 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             case .ignoreElements:
                 targetVC = IgnoreViewController()
                 
-            default:
-                return
+            case .sample:
+                targetVC = SampleViewController()
+                
+            case .skip:
+                targetVC = SkipViewController()
+                
+            case .skipWhile:
+                targetVC = SkipWhileViewController()
+                
+            case .skipUntil:
+                targetVC = SkipUntilViewController()
+                
+            case .take:
+                targetVC = TakeViewController()
+                
+            case .takeWhile:
+                targetVC = TakeWhileViewController()
+                
+            case .takeUntil:
+                targetVC = TakeUntilViewController()
             }
         
         case .Combining:
-            return
+            let item = Combining.allCases[indexPath.row]
+            switch item {
+            case .combineLatest:
+                targetVC = CombineLatestViewController()
+                
+            case .withLatestFrom:
+                targetVC = WithLatestFromViewController()
+                
+            default:
+                return
+            }
         }
         
         navigationController?.pushViewController(targetVC, animated: true)

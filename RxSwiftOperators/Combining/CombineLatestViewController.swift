@@ -1,18 +1,16 @@
 //
-//  ElementAtViewController.swift
+//  CombineLatestViewController.swift
 //  RxSwiftOperators
 //
-//  Created by TaeWon Seo on 2021/03/23.
+//  Created by 서태원 on 2021/03/23.
 //
 
 import UIKit
 import RxSwift
 
-class ElementAtViewController: UIViewController {
-
+class CombineLatestViewController: UIViewController {
     private var textView = UITextView()
     private var disposeBag = DisposeBag()
-    private let observable = Observable.of(1, 2, 3, 4, 5, 6)
     
     private var text: String = ""
     
@@ -24,17 +22,16 @@ class ElementAtViewController: UIViewController {
         textView.isEditable = false
         textView.font = .systemFont(ofSize: 32.0)
         
-        subscribe(1)
-        subscribe(0)
-        subscribe(1)
-        subscribe(5)
-        subscribe(6)
+        bind()
     }
     
-    private func subscribe(_ n: Int) {
-        observable.element(at: n)
+    private func bind() {
+        let first = Observable<Int>.interval(.seconds(1), scheduler: MainScheduler.instance)
+        let second = Observable<Int>.interval(.seconds(3), scheduler: MainScheduler.instance)
+        
+        Observable.combineLatest(first, second)
             .subscribe(onNext: {
-                self.text = self.text + "\($0)\n"
+                self.text = self.text + "first: \($0), second: \($1)\n"
                 self.textView.text = self.text
             }).disposed(by: disposeBag)
     }

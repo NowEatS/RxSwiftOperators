@@ -1,18 +1,16 @@
 //
-//  ElementAtViewController.swift
+//  SkipWhileViewController.swift
 //  RxSwiftOperators
 //
-//  Created by TaeWon Seo on 2021/03/23.
+//  Created by 서태원 on 2021/03/23.
 //
 
 import UIKit
 import RxSwift
 
-class ElementAtViewController: UIViewController {
-
+class SkipWhileViewController: UIViewController {
     private var textView = UITextView()
     private var disposeBag = DisposeBag()
-    private let observable = Observable.of(1, 2, 3, 4, 5, 6)
     
     private var text: String = ""
     
@@ -24,17 +22,15 @@ class ElementAtViewController: UIViewController {
         textView.isEditable = false
         textView.font = .systemFont(ofSize: 32.0)
         
-        subscribe(1)
-        subscribe(0)
-        subscribe(1)
-        subscribe(5)
-        subscribe(6)
+        bind()
     }
     
-    private func subscribe(_ n: Int) {
-        observable.element(at: n)
+    private func bind() {
+        let names = ["성표", "현호", "석준", "진모", "태원", "연주", "재은", "상진", "예빈", "수빈"]
+        
+        Observable.from(names).skip(while: { $0 != "태원" }  )
             .subscribe(onNext: {
-                self.text = self.text + "\($0)\n"
+                self.text = self.text + $0 + "\n"
                 self.textView.text = self.text
             }).disposed(by: disposeBag)
     }

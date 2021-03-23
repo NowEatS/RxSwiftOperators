@@ -20,6 +20,7 @@ class DistinctUntilChangedViewController: UIViewController {
         
         view.addSubview(textView)
         textView.frame = view.frame
+        textView.isEditable = false
         textView.font = .systemFont(ofSize: 32.0)
         
         Observable.of(1, 2, 2, 2, 3, 1, 1, 5)
