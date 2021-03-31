@@ -10,6 +10,7 @@ import Foundation
 enum Sections: String, CaseIterable {
     case Filtering
     case Combining
+    case Utility
 }
 
 enum Filtering: String, CaseIterable {
@@ -38,4 +39,16 @@ enum Combining: String, CaseIterable {
     case concat
     case amb
     case startWith
+}
+
+enum Utility: String, CaseIterable {
+    case Do
+    case delay
+    case observeOn
+    case subscribe
+    case subscribeOn
+    case Materialize
+    case Dematerialize
+    case timeOut
+    case using
 }

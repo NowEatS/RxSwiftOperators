@@ -30,6 +30,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         case .Combining:
             return Combining.allCases.count
+            
+        case .Utility:
+            return Utility.allCases.count
         }
     }
     
@@ -46,6 +49,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         case .Combining:
             itemName = Combining.allCases[indexPath.row].rawValue
+            
+        case .Utility:
+            itemName = Utility.allCases[indexPath.row].rawValue
         }
         
         let cell = UITableViewCell()
@@ -129,6 +135,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 
             case .startWith:
                 targetVC = StartWithViewController()
+            }
+            
+        case .Utility:
+            let item = Combining.allCases[indexPath.row]
+            switch item {
+            case .combineLatest:
+                targetVC = DoViewController()
+                
+            default:
+                targetVC = UIViewController()
             }
         }
         

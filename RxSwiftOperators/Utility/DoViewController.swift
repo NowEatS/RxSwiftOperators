@@ -1,14 +1,15 @@
 //
-//  SampleViewController.swift
+//  DoViewController.swift
 //  RxSwiftOperators
 //
-//  Created by 서태원 on 2021/03/23.
+//  Created by TaeWon Seo on 2021/03/31.
 //
 
 import UIKit
 import RxSwift
 
-class SampleViewController: UIViewController {
+class DoViewController: UIViewController {
+
     private var textView = UITextView()
     private var disposeBag = DisposeBag()
     
@@ -26,11 +27,11 @@ class SampleViewController: UIViewController {
     }
     
     private func bind() {
-        let observable = Observable<Int>.interval(.seconds(1), scheduler: MainScheduler.instance)
-        observable.debug("first")
-            .sample(Observable<Int>.interval(.seconds(3), scheduler: MainScheduler.instance))
-            .debug("second")
-            .subscribe(onNext: {
+        let doObservable = Observable.of(1, 2, 3, 4, 5)
+        
+        doObservable.do(onNext: {
+                $0 * 10 // do 연산자 안에서 수정된 이벤트는 실제로 수정된 값을 전달하지 않고, 원래 값을 전달한다.
+            }).subscribe(onNext: {
                 self.text = self.text + "\($0)\n"
                 self.textView.text = self.text
             }).disposed(by: disposeBag)

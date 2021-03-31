@@ -1,14 +1,15 @@
 //
-//  SampleViewController.swift
+//  DelayViewController.swift
 //  RxSwiftOperators
 //
-//  Created by 서태원 on 2021/03/23.
+//  Created by TaeWon Seo on 2021/03/31.
 //
 
 import UIKit
 import RxSwift
 
-class SampleViewController: UIViewController {
+class DelayViewController: UIViewController {
+    
     private var textView = UITextView()
     private var disposeBag = DisposeBag()
     
@@ -26,13 +27,11 @@ class SampleViewController: UIViewController {
     }
     
     private func bind() {
-        let observable = Observable<Int>.interval(.seconds(1), scheduler: MainScheduler.instance)
-        observable.debug("first")
-            .sample(Observable<Int>.interval(.seconds(3), scheduler: MainScheduler.instance))
-            .debug("second")
+        let delayObservable = Observable.of(1, 2, 3, 4, 5)
+        
+        delayObservable.delay(.seconds(3), scheduler: MainScheduler.instance)
             .subscribe(onNext: {
-                self.text = self.text + "\($0)\n"
-                self.textView.text = self.text
+                print($0)
             }).disposed(by: disposeBag)
     }
 }

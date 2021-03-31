@@ -17,6 +17,8 @@
 		7B64E718260A240D00FE7DAD /* TakeUntilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64E717260A240D00FE7DAD /* TakeUntilViewController.swift */; };
 		7B64E71C260A264F00FE7DAD /* CombineLatestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64E71B260A264F00FE7DAD /* CombineLatestViewController.swift */; };
 		7B64E720260A28FB00FE7DAD /* WithLatestFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64E71F260A28FB00FE7DAD /* WithLatestFromViewController.swift */; };
+		F3C6969C2613806100A9F0CF /* DoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6969B2613806100A9F0CF /* DoViewController.swift */; };
+		F3C6969F261386A500A9F0CF /* DelayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6969E261386A500A9F0CF /* DelayViewController.swift */; };
 		F3F6D7E32608E8FE00C9D995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6D7E22608E8FE00C9D995 /* AppDelegate.swift */; };
 		F3F6D7E52608E8FE00C9D995 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6D7E42608E8FE00C9D995 /* SceneDelegate.swift */; };
 		F3F6D7E72608E8FE00C9D995 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6D7E62608E8FE00C9D995 /* ViewController.swift */; };
@@ -52,6 +54,8 @@
 		7B64E71F260A28FB00FE7DAD /* WithLatestFromViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithLatestFromViewController.swift; sourceTree = "<group>"; };
 		970FAE176FA9F25444462818 /* Pods-RxSwiftOperators.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftOperators.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftOperators/Pods-RxSwiftOperators.release.xcconfig"; sourceTree = "<group>"; };
 		CD9A32B1E04874E79A3B07B0 /* Pods_RxSwiftOperators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftOperators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3C6969B2613806100A9F0CF /* DoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoViewController.swift; sourceTree = "<group>"; };
+		F3C6969E261386A500A9F0CF /* DelayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayViewController.swift; sourceTree = "<group>"; };
 		F3F6D7DF2608E8FE00C9D995 /* RxSwiftOperators.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftOperators.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F6D7E22608E8FE00C9D995 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3F6D7E42608E8FE00C9D995 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +124,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F3C6969A2613805100A9F0CF /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F3C6969B2613806100A9F0CF /* DoViewController.swift */,
+				F3C6969E261386A500A9F0CF /* DelayViewController.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		F3F6D7D62608E8FE00C9D995 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +159,7 @@
 				F3F6D7E62608E8FE00C9D995 /* ViewController.swift */,
 				F3F6D7FF2608EE6900C9D995 /* Filtering */,
 				7B64E71A260A263B00FE7DAD /* Combining */,
+				F3C6969A2613805100A9F0CF /* Utility */,
 				F3F6D7E82608E8FE00C9D995 /* Main.storyboard */,
 				F3F6D7EB2608E8FF00C9D995 /* Assets.xcassets */,
 				F3F6D7ED2608E8FF00C9D995 /* LaunchScreen.storyboard */,
@@ -292,6 +306,7 @@
 			files = (
 				F3F6D822260A42BF00C9D995 /* SwitchLatestViewController.swift in Sources */,
 				F3F6D7F82608E9DD00C9D995 /* Items.swift in Sources */,
+				F3C6969C2613806100A9F0CF /* DoViewController.swift in Sources */,
 				7B64E70C260A1F0C00FE7DAD /* SkipWhileViewController.swift in Sources */,
 				7B64E715260A234A00FE7DAD /* TakeWhileViewController.swift in Sources */,
 				F3F6D80B2608FA9A00C9D995 /* DistinctUntilChangedViewController.swift in Sources */,
@@ -315,6 +330,7 @@
 				F3F6D8082608F39C00C9D995 /* ThrottleViewController.swift in Sources */,
 				7B64E720260A28FB00FE7DAD /* WithLatestFromViewController.swift in Sources */,
 				F3F6D80E2608FDB900C9D995 /* ElementAtViewController.swift in Sources */,
+				F3C6969F261386A500A9F0CF /* DelayViewController.swift in Sources */,
 				F3F6D7E52608E8FE00C9D995 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
